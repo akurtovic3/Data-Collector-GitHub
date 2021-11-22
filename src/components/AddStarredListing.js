@@ -25,7 +25,7 @@ const AddStarredListing = () => {
         );
     });
 
-    return <>{searched_repos.length ? renderList : <h4 style={{ color: "#fff", marginTop: "50px", textAlign: "center", alignSelf: "center" }}>We couldn’t find any repositories matching the search input.</h4>}</>;
+    return <>{searched_repos.length ? renderList : <p style={{ color: "#fff", marginTop: "50px", textAlign: "center", alignSelf: "center" }}>We couldn’t find any repositories matching the search input.</p>}</>;
 
 };
 

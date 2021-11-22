@@ -20,17 +20,30 @@ const UpdateUserInfo = () => {
         swal({ text: "User profile successfully updated!", icon: "success" })
     };
 
+    const changesSaved = () => {
+        if (name !== (userInfo.name ? userInfo.name : "") || bio !== (userInfo.bio ? userInfo.bio : "") || company !== (userInfo.company ? userInfo.company : "")
+            || location !== (userInfo.location ? userInfo.location : "") || website !== (userInfo.website ? userInfo.website : ""))
+            return false;
+        else
+            return true;
+    }
+
     const handleDownload = async () => {
-        const fileName = "user_" + userInfo.login;
-        const json = JSON.stringify(userInfo);
-        const blob = new Blob([json], { type: 'application/json' });
-        const href = await URL.createObjectURL(blob);
-        const link = document.createElement('a');
-        link.href = href;
-        link.download = fileName + ".json";
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
+        if (!changesSaved()) {
+            swal({ text: "You have to save changes first!", icon: "error" })
+        }
+        else {
+            const fileName = "user_" + userInfo.login;
+            const json = JSON.stringify(userInfo);
+            const blob = new Blob([json], { type: 'application/json' });
+            const href = await URL.createObjectURL(blob);
+            const link = document.createElement('a');
+            link.href = href;
+            link.download = fileName + ".json";
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
     }
 
     return (

@@ -19,6 +19,16 @@ body {
   justify-items: center;
 }
 
+.repositories-list-search {
+  padding: 20px;
+  border-top: solid 1px gray;
+  margin: 0 2%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-items: center;
+}
+
 .save-btn-rep {
   padding: 5px 15px;
   background-color: #171a1f;

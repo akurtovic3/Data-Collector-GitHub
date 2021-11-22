@@ -27,7 +27,7 @@ const AddStarred = () => {
                 <input className="search-input" type="text" value={input} onChange={event => setInput(event.target.value)} placeholder="Search for repositories..."></input>
             </div>
             <button className="search-btn" onClick={handleSearch}>Search</button>
-            <div className="repositories-list">
+            <div className="repositories-list-search">
                 <AddStarredListing />
             </div>
         </div>
