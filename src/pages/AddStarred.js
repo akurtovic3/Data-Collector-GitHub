@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import * as repositoriesActions from "../redux/actions/repositoryActions";
 import { useDispatch, useSelector } from "react-redux";
 import Navbar from "../components/Navbar"
-import AddStarredListing from "../components/AddStarredListing"
+import AddStarredList from "../components/AddStarredList"
 import "./Repositories.css"
 
 const AddStarred = () => {
@@ -28,7 +28,7 @@ const AddStarred = () => {
             </div>
             <button className="search-btn" onClick={handleSearch}>Search</button>
             <div className="repositories-list-search">
-                <AddStarredListing />
+                <AddStarredList />
             </div>
         </div>
     );

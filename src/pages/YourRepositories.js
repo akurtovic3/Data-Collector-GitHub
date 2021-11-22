@@ -4,10 +4,10 @@ import * as userActions from "../redux/actions/userActions"
 import { useDispatch, useSelector } from "react-redux";
 import { useHistory, Link } from "react-router-dom";
 import Navbar from "../components/Navbar"
-import Repository from "../components/Repository"
+import YourRepositoriesList from "../components/YourRepositoriesList"
 import "./Repositories.css"
 
-const Repositories = () => {
+const YourRepositories = () => {
 
   const user = useSelector((state) => ({ ...state.user.user }));
   const repositories = useSelector((state) => ({ ...state.repositories.repositories }));
@@ -65,7 +65,7 @@ const Repositories = () => {
       <Navbar tab="repos" />
       <br />
       <div className="repositories-list">
-        <Repository />
+        <YourRepositoriesList />
       </div>
       <button onClick={handleDownload} className="save-btn-rep">Save as JSON</button>
     </div>
@@ -73,4 +73,4 @@ const Repositories = () => {
 
 };
 
-export default Repositories;
+export default YourRepositories;

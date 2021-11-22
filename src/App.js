@@ -1,6 +1,6 @@
 import './App.css';
 import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom";
-import Repositories from "./pages/Repositories";
+import YourRepositories from "./pages/YourRepositories";
 import StarredRepositories from "./pages/StarredRepositories";
 import AddStarred from "./pages/AddStarred"
 import Login from "./pages/Login";
@@ -33,7 +33,7 @@ function App() {
             <Redirect to="/login" />
           </Route>
           <Route exact path="/login" component={Login} />
-          <Route path="/repos" component={Repositories} />
+          <Route path="/repos" component={YourRepositories} />
           <Route path="/account" component={Account} />
           <Route path="/starred" component={StarredRepositories} />
           <Route path="/search" component={AddStarred} />

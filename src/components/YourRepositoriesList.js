@@ -4,7 +4,7 @@ import * as reposActions from "../redux/actions/repositoryActions";
 import moment from "moment"
 import "./Repository.css"
 
-const Repository = () => {
+const YourRepositoriesList = () => {
 
   const repositories = useSelector(state => state.repositories.repositories)
   const dispatch = useDispatch();
@@ -25,4 +25,4 @@ const Repository = () => {
 
 };
 
-export default Repository;
+export default YourRepositoriesList;

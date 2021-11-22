@@ -4,7 +4,7 @@ import * as reposActions from "../redux/actions/repositoryActions";
 import moment from "moment"
 import "./Repository.css"
 
-const AddStarredListing = () => {
+const AddStarredList = () => {
 
     const starred_ids = useSelector(state => state.repositories.starred_ids)
     const searched_repos = useSelector(state => state.repositories.searched_starred)
@@ -29,4 +29,4 @@ const AddStarredListing = () => {
 
 };
 
-export default AddStarredListing;
+export default AddStarredList;

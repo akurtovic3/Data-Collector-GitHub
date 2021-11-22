@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import Navbar from "../components/Navbar"
-import StarredRepository from "../components/StarredRepository"
+import StarredRepositoriesList from "../components/StarredRepositoriesList"
 import "./Repositories.css"
 
 const StarredRepositories = () => {
@@ -27,7 +27,7 @@ const StarredRepositories = () => {
       <Navbar tab="starred" />
       <br />
       <div className="repositories-list">
-        <StarredRepository />
+        <StarredRepositoriesList />
       </div>
       <button onClick={handleDownload} className="save-btn-rep">Save as JSON</button>
     </div>
