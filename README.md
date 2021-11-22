@@ -1,5 +1,11 @@
 # Data-Collector-Github
 
+
+
+https://user-images.githubusercontent.com/37331654/142827647-e311e2ed-32b0-43fd-ad28-14d759f33df2.mp4
+
+
+
 ## Description
 
 Data-Collector-GitHub is a small frontend application implemented using React.js. User authentication is handled using Firebase Authentication and GitHub OAuth application, so the user must log in using an existing GitHub account before fetching data from APIs. The application data is managed using the Redux store. After logging in, user can choose between four menu options:
