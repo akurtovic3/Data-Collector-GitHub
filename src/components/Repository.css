@@ -1,0 +1,43 @@
+.repository {
+  border: 1px solid #171a1f;
+  background-color: #171a1f;
+  border-radius: 5px;
+  width: 80%;
+  margin: 5px;
+  padding: 10px;
+  color: #fff;
+  height: auto;
+}
+
+.star-repository {
+  border: 1px solid gray;
+  border-radius: 5px;
+  width: 80%;
+  margin: 5px;
+  padding: 10px;
+  color: #fff;
+  height: auto;
+}
+
+.title {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.btn {
+  padding: 5px 15px;
+  background-color: #282c34;
+  width: 50%;
+  color: white;
+  border-radius: 5px;
+  display: inline-block;
+  border: solid 2px gray;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #7d827f;
+  color: #fff;
+  opacity: 1;
+  cursor: pointer;
+}

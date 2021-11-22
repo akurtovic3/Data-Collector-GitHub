@@ -1,0 +1,105 @@
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  background-color: #282c34;
+  padding: 0;
+  margin: 0;
+}
+/*
+.repositories-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}*/
+.user-container {
+  text-align: center;
+  background-color: #282c34;
+  height: 100vh;
+  width: 100vw;
+}
+
+.user-info-container {
+  height: 80%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr) repeat(2, 2fr);
+  grid-template-rows: repeat(4, 1fr);
+}
+
+.update-info-list {
+  background-color: white;
+  grid-column: 3/5;
+  grid-row: 1/5;
+}
+.followers {
+  font-size: 1rem;
+  grid-column: 1/3;
+  grid-row: 2/5;
+  color: #fff;
+  padding-top: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.follower {
+  margin: 3px;
+  padding-top: 15px;
+  width: 50%;
+  border: solid 1px gray;
+  border-radius: 10px;
+}
+
+.user {
+  grid-column: 1/3;
+  grid-row: 1/2;
+  color: #fff;
+  padding: 0;
+  margin: 0;
+  align-self: center;
+  justify-self: center;
+}
+
+.user a {
+  color: #fff;
+}
+
+.user a:hover {
+  color: gray;
+}
+
+.user p {
+  padding: 10px;
+}
+
+.foll_acc_pic {
+  height: 20px;
+  width: 20px;
+  border-radius: 100%;
+  margin-right: 5px;
+}
+
+.user img {
+  padding: 10px;
+  height: 50%;
+  width: 38%;
+}
+
+.save-btn {
+  padding: 5px 15px;
+  background-color: #282c34;
+  font-weight: bold;
+  font-size: 1.3rem;
+  color: white;
+  border-radius: 5px;
+  display: inline-block;
+  border: solid 3px gray;
+  transition: all 0.3s ease;
+  margin: 20px;
+  width: 90%;
+}
+
+.save-btn:hover {
+  background-color: #7d827f;
+  opacity: 1;
+  cursor: pointer;
+}

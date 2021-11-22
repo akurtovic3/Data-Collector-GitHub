@@ -1,0 +1,72 @@
+header {
+  background-color: #171a1f;
+  border-bottom: solid 3px white;
+}
+
+header .inner-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+
+header a {
+  color: white;
+  font-size: 1.25rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+header a:hover {
+  opacity: 0.7;
+}
+
+header .logo a {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+header .nav-links {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+header .nav-links li {
+  display: inline-block;
+  margin-right: 30px;
+  font-size: 1.5rem;
+}
+
+header .nav-links li:last-child {
+  margin-right: 0;
+}
+
+.btn-logout {
+  padding: 10px 15px;
+  background-color: #282c34;
+  font-size: 1.2rem;
+  color: white;
+  border-radius: 5px;
+  display: inline-block;
+  border: solid 1px white;
+  transition: all 0.3s ease;
+}
+
+.btn-logout:hover {
+  background-color: #7d827f;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.btn:disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.link:hover {
+  color: #7d827f;
+  cursor: pointer;
+}

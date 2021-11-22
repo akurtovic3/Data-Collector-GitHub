@@ -1,0 +1,76 @@
+.repositories-container {
+  text-align: center;
+  background-color: #282c34;
+  height: 100vh;
+}
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  background-color: #282c34;
+  padding: 0;
+  margin: 0;
+}
+
+.repositories-list {
+  margin: 2%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-items: center;
+}
+
+.save-btn-rep {
+  padding: 5px 15px;
+  background-color: #171a1f;
+  font-weight: bold;
+  font-size: 1.3rem;
+  color: white;
+  border-radius: 5px;
+  display: inline-block;
+  border: solid 3px gray;
+  transition: all 0.3s ease;
+  margin: 20px;
+  width: 87%;
+}
+
+.save-btn-rep:hover {
+  background-color: #7d827f;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.search-div {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.search-input {
+  background-color: #d3d3d3;
+  color: #282c34;
+  border: 2px solid gray;
+  font-size: 1.1rem;
+  padding: 5px;
+  width: 80%;
+}
+
+.search-btn {
+  padding: 5px 20px;
+  background-color: #171a1f;
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: white;
+  border-radius: 5px;
+  display: inline-block;
+  border: solid 3px gray;
+  transition: all 0.3s ease;
+  margin: 20px;
+  width: 50%;
+}
+
+.search-btn:hover {
+  background-color: #7d827f;
+  opacity: 1;
+  cursor: pointer;
+}

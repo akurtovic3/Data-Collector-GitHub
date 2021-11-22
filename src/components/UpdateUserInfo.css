@@ -1,0 +1,76 @@
+.update-container {
+  background-color: #282c34;
+  color: #fff;
+  height: 100%;
+  border-left: 1px solid gray;
+}
+
+.form {
+  padding: 30px;
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  grid-template-rows: 1fr 3fr repeat(3, 1fr);
+  grid-gap: 30px;
+  justify-items: stretch;
+  justify-content: center;
+  font-size: 1.1rem;
+  width: 90%;
+}
+
+.form label {
+  text-align: right;
+  align-self: center;
+}
+
+.bio {
+  align-self: stretch !important;
+}
+
+.form input {
+  background-color: #282c34;
+  color: white;
+  border: 2px solid gray;
+  border-radius: 4px;
+}
+
+.title-update {
+  padding: 20px;
+  padding-top: 40px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.btn-save {
+  padding: 5px 15px;
+  margin: 5px;
+  background-color: #171a1f;
+  width: 38%;
+  color: white;
+  border-radius: 5px;
+  border: solid 2px gray;
+  transition: all 0.3s ease;
+  margin-left: 0;
+  font-weight: bold;
+}
+
+.btn-save:hover {
+  background-color: gray;
+  color: #fff;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.swal-footer {
+  text-align: center;
+}
+
+.swal-footer button {
+  background-color: #282c34;
+}
+
+.swal-footer button:hover {
+  background-color: gray;
+}
